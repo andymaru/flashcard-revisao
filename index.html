@@ -1,0 +1,130 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flashcards de Estudo</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Meus Flashcards</h1>
+
+        <div class="controls">
+            <select id="materiaSelect">
+                <option value="datacenter">datacenter</option>
+                <option value="datacenter">testes</option>
+                <option value="datacenter">oooo</option>
+            </select>
+            <button id="newCardBtn">+ Novo Card</button>
+        </div>    
+
+        <div class="flashcard-container">
+            <div class="flashcard" onclick="flipCard()">
+                <div class="flashcard-front">
+                    <h2 id="pergunta">Clique em "+ Novo Card" para começar</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p id="resposta">Resposta aparecerá aqui</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button id="prevBtn">Anterior</button>
+            <span id="cardCounter">0/0</span>
+            <button id="nextBtn">Próximo</button>
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Adicionar Novo Card</h2>
+                <form id="cardForm">
+                    <label for="materia">Matéria:</label>
+                    <select id="materia" required>
+                        <option value="datacenter">Datacenter</option>
+                        <option value="datacenter">testes</option>
+                        <option value="datacenter">oooo</option>    
+                    </select>
+                    <label for="perguntaInput">Pergunta:</label>
+                    <textarea id="perguntaInput" required></textarea>
+                    <label for="respostaInput">Resposta:</label>
+                    <textarea id="respostaInput" required></textarea>
+                    <button type="submit">Salvar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcards de Estudo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Meus Flashcards</h1>
+    
+    <!-- Selecionar Matéria -->
+    <div class="controls">
+      <select id="materiaSelect">
+        <option value="testes">testes</option>
+        <option value="historia">História</option>
+        <option value="biologia">Biologia</option>
+      </select>
+      <button id="newCardBtn">+ Novo Card</button>
+    </div>
+
+    <!-- Flashcard -->
+    <div class="flashcard-container">
+      <div class="flashcard" onclick="flipCard()">
+        <div class="flashcard-front">
+          <h2 id="pergunta">Clique em "+ Novo Card" para começar</h2>
+        </div>
+        <div class="flashcard-back">
+          <p id="resposta">Resposta aparecerá aqui.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navegação -->
+    <div class="navigation">
+      <button id="prevBtn">← Anterior</button>
+      <span id="cardCounter">0/0</span>
+      <button id="nextBtn">Próximo →</button>
+    </div>
+
+    <!-- Formulário (modal) para novo card -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Adicionar Novo Card</h2>
+        <form id="cardForm">
+          <label for="materia">Matéria:</label>
+          <select id="materia" required>
+            <option value="testes">testes</option>
+            <option value="historia">História</option>
+            <option value="biologia">Biologia</option>
+          </select>
+          <label for="perguntaInput">Pergunta:</label>
+          <textarea id="perguntaInput" required></textarea>
+          <label for="respostaInput">Resposta:</label>
+          <textarea id="respostaInput" required></textarea>
+          <button type="submit">Salvar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
